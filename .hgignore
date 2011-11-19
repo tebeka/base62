@@ -1,0 +1,7 @@
+syntax: glob
+
+*.6
+*.out
+_*.go
+_obj
+_test
