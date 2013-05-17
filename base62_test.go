@@ -4,12 +4,10 @@ import (
 	"testing"
 )
 
-type testCase struct {
-	in  uint64
+var testCases = []struct {
+	in uint64
 	out string
-}
-
-var testCases = []testCase{
+}{
 	{0, "0"},
 	{1, "b"},
 	{22, "w"},
