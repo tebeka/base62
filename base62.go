@@ -9,8 +9,7 @@ const (
 	Version = "0.1.0"
 )
 
-/* Encode num to base62 string. 
-*/
+// Encode encoders num to base62 string.
 func Encode(num uint64) string {
 	if num == 0 {
 		return "0"
@@ -25,6 +24,7 @@ func Encode(num uint64) string {
 		arr = append(arr, alphabet[rem])
 	}
 
+	// Reverse the result array
 	for i, j := 0, len(arr)-1; i < j; i, j = i+1, j-1 {
 		arr[i], arr[j] = arr[j], arr[i]
 	}
